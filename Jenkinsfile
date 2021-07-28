@@ -17,10 +17,10 @@ pipeline {
                 echo 'Deployed'
             }
         }
-      post{
-        failure{
-          echo 'Failure Occured'
-        }
+    }
+    post{
+      failure{
+        echo 'Failure Occured'
       }
     }
 }
